@@ -78,7 +78,7 @@ Class Connection
 
     // Method to delete one row
     public function deleteData($dbName, $id){
-        $query = "DELETE FROM ". $dbName . " WHERE CitaId =" . $id;
+        $query = "DELETE FROM ". $dbName . " WHERE id =" . $id;
         $statement = $this->connection->prepare($query);
         $statement->execute();
     }
